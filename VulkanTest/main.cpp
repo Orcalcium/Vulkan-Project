@@ -274,7 +274,7 @@ private:
         bool swapChainAdequate = false;
         if (extensionsSupported) {
             SwapChainSupportDetails swapChainSupport = querySwapChainSupprot(device);
-            swapChainAdequate = !swapChainSupport.formats.empty() && !swapChainSupport.formats.empty();
+            swapChainAdequate = !swapChainSupport.formats.empty() && !swapChainSupport.presentModes.empty();
         }
         
         VkPhysicalDeviceProperties deviceProperties;
